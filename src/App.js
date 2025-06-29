@@ -773,7 +773,7 @@ const Footer = () => (
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/dropby-site">
             <AppWrapper />
         </BrowserRouter>
     );
