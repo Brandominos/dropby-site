@@ -801,25 +801,35 @@ const AppWrapper = () => {
 };
 
 const AppContent = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
     return (
-        <>
+        <div className="bg-gray-900">
             <Header />
             <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/players" element={<PlayerPage />} />
                 <Route path="/partner" element={<PartnerPage />} />
                 <Route path="/collaborators" element={<CollaboratorPage />} />
-                <Route path="/players" element={<PlayerPage />} />
-                <Route path="/" element={
-                    <main>
-                        <Hero />
-                        <About />
-                        <Features />
-                        <AudienceSections />
-                        <PlayerSection />
-                        <FAQ />
-                    </main>
-                } />
             </Routes>
             <Footer />
-        </>
+        </div>
     );
-} 
+};
+
+const HomePage = () => {
+    return (
+        <main>
+            <Hero />
+            <About />
+            <Features />
+            <AudienceSections />
+            <PlayerSection />
+            <FAQ />
+        </main>
+    );
+}; 
