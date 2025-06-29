@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dropby-site/static/css/main.6b37506d.css",
+    "main.js": "/dropby-site/static/js/main.7b1a4f3d.js",
+    "static/media/dblogo.png": "/dropby-site/static/media/dblogo.22a80ff19a71adebec80.png",
+    "index.html": "/dropby-site/index.html",
+    "main.6b37506d.css.map": "/dropby-site/static/css/main.6b37506d.css.map",
+    "main.7b1a4f3d.js.map": "/dropby-site/static/js/main.7b1a4f3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b37506d.css",
+    "static/js/main.7b1a4f3d.js"
+  ]
+}
