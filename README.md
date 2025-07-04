@@ -9,16 +9,19 @@ A modern React website for DropBy - a VR-native discovery network that replaces 
 - **Responsive Design**: Mobile-first design with Tailwind CSS
 - **Modern UI**: Dark theme with teal/cyan accent colors
 - **Interactive Components**: FAQ accordion, mobile menu, smooth scrolling
+- **Multi-page Routing**: Separate pages for Players, Partners, and Collaborators
 
 ## Tech Stack
 
 - React 18
 - Tailwind CSS
 - Lucide React Icons
+- React Router DOM
 - Intersection Observer API
 - Canvas API for particle effects
+- Material-UI components
 
-## Getting Started
+## Quick Start
 
 1. **Install dependencies:**
    ```bash
@@ -43,9 +46,17 @@ npm run build
 
 ```
 src/
-├── App.js          # Main application component
-├── index.js        # React entry point
-└── index.css       # Global styles and Tailwind imports
+├── App.js                    # Main application component with routing
+├── index.js                  # React entry point
+├── index.css                 # Global styles and Tailwind imports
+├── dblogo.png               # Logo image
+├── components/               # Reusable UI components
+│   └── ui/                  # UI component library
+├── pages/                   # Page components
+│   ├── PlayerPage.js        # Players page
+│   ├── PartnerPage.js       # Partners page
+│   └── CollaboratorPage.js  # Collaborators page
+└── hooks/                   # Custom React hooks
 ```
 
 ## Key Components
@@ -58,5 +69,12 @@ src/
 - **PlayerSection**: Player-focused content with reward UI
 - **FAQ**: Expandable FAQ section
 - **Footer**: Site footer with links
+
+## Pages
+
+- **Home** (`/`): Main landing page
+- **Players** (`/players`): Player-focused content
+- **Partners** (`/partners`): Partner information
+- **Collaborators** (`/collaborators`): Collaborator resources
 
 The website is now ready to run! 🚀
